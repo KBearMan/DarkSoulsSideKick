@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weapon Weight"
+        android:id="@+id/weaponweightlabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dip"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ff000000" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weaponweighttext"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/weaponweightlabel"
+        android:layout_marginTop="20dip"
+        android:layout_alignParentRight="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ff000000"
+        android:textAlignment="center"
+        android:autoText="false"
+        android:inputType="numberDecimal"
+        android:gravity="center" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weight Class"
+        android:id="@+id/weightclasslabel"
+        android:layout_below="@+id/weaponweightlabel"
+        android:layout_marginTop="20dip"
+        android:layout_alignParentLeft="true"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:id="@+id/weightclasslist"
+        android:layout_below="@+id/weaponweightlabel"
+        android:layout_toRightOf="@+id/weightclasslabel"
+        android:layout_marginTop="20dip"
+        android:hint="Click For Options"
+        android:onClick="selectWeightClass"
+        android:clickable="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stat Priority"
+        android:id="@+id/prioritylistlabel"
+        android:layout_below="@+id/weightclasslabel"
+        android:layout_marginTop="20dip"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#ff000000" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/prioritylist"
+        android:layout_below="@id/prioritylistlabel"
+        android:layout_above="@+id/continuebtn"
+        android:choiceMode="singleChoice" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/continuebtn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/continuebtn"
+        android:layout_marginBottom="10dip"
+        android:clickable="true"
+        android:onClick="onContinueClick"/>
+
+</RelativeLayout>

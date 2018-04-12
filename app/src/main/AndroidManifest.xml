@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="zeik.darksoulsequipmentcalculator" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CalculatorSelectionScreen"
+            android:label="@string/title_activity_calculator__selection__screen"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zeik.darksoulsequipmentcalculator.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ArmorCalculator"
+            android:label="@string/title_activity_armor_calculator"
+            android:parentActivityName=".CalculatorSelectionScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zeik.darksoulsequipmentcalculator.CalculatorSelectionScreen" />
+        </activity>
+        <activity
+            android:name=".WeaponCalculator"
+            android:label="@string/title_activity_weapon_calculator"
+            android:parentActivityName=".CalculatorSelectionScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zeik.darksoulsequipmentcalculator.CalculatorSelectionScreen" />
+        </activity>
+        <activity
+            android:name=".CompleteCalculator"
+            android:label="@string/title_activity_complete_calculator"
+            android:parentActivityName=".CalculatorSelectionScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zeik.darksoulsequipmentcalculator.CalculatorSelectionScreen" />
+        </activity>
+        <activity
+            android:name=".ShieldComparison"
+            android:label="@string/title_activity_shield_comparison"
+            android:parentActivityName=".CalculatorSelectionScreen" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="zeik.darksoulsequipmentcalculator.CalculatorSelectionScreen" />
+        </activity>
+        <activity
+            android:name=".ArmorResultsScreen"
+            android:label="@string/title_activity_armor_results_screen" >
+        </activity>
+    </application>
+
+</manifest>

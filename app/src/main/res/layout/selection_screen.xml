@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/armor_calc_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dip"
+        android:background="@drawable/armorcalc"
+        android:clickable="true"
+        android:onClick="ArmorCalculatorClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weap_calc_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/armor_calc_btn"
+        android:layout_marginBottom="20dip"
+        android:textSize="25dip"
+        android:background="@drawable/weaponcalc"
+        android:onClick="WeaponCalculatorClicked"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/com_calc_btn"
+        android:layout_gravity="center"
+        android:layout_below="@+id/weap_calc_btn"
+        android:layout_centerInParent="true"
+        android:textSize="25dip"
+        android:background="@drawable/completecalc"
+        android:clickable="true"
+        android:onClick="CompleteCalculatorClicked" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shield_comparison_btn"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/com_calc_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dip"
+        android:textSize="25dip"
+        android:background="@drawable/shieldcomp"
+        android:onClick="ShieldComparisonClicked"
+        android:clickable="true" />
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Priorities"
+        android:id="@+id/armor_result_screen_change_priorities_button"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:onClick="onChangePrioritiesClicked"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2">
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/armor_result_list"
+            android:layout_gravity="center_horizontal"/>
+    </ScrollView>
+
+</LinearLayout>

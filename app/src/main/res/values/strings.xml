@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dark Souls Equipment Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_calculator__selection__screen">Calculator_Selection_Screen</string>
+    <string name="title_activity_armor_calculator">ArmorCalculator</string>
+    <string name="title_activity_weapon_calculator">WeaponCalculator</string>
+    <string name="title_activity_complete_calculator">CompleteCalculator</string>
+    <string name="title_activity_shield_comparison">ShieldComparison</string>
+    <string name="normal_damage">Normal Damage</string>
+    <string name="striking_damage">Striking Damage</string>
+    <string name="slashing_damage">Slashing Damage</string>
+    <string name="thrusting_damage">Thrusting Damage</string>
+    <string name="magical_damage">Magical Damage</string>
+    <string name="fire_damage">Fire Damage</string>
+    <string name="lightning_damage">Lightning Damage</string>
+    <string name="normal_defense">Normal Defense</string>
+    <string name="striking_defense">Striking Defense</string>
+    <string name="slashing_defense">Slashing Defense</string>
+    <string name="thrusting_defense">Thrusting Defense</string>
+    <string name="magical_defense">Magical Defense</string>
+    <string name="fire_defense">Fire Defense</string>
+    <string name="lightning_defense">Lightning Defense</string>
+    <string name="bleed_resistance">Bleed Resistance</string>
+    <string name="poison_resistance">Poison Resistance</string>
+    <string name="curse_resistance">Curse Resistance</string>
+    <string name="poise">Poise</string>
+    <string name="critical">Critical</string>
+    <string name="durability">Durability</string>
+    <string name="weight">Weight</string>
+    <string name="stability">Stability</string>
+    <string name="strength_requirement">Strength Requirement</string>
+    <string name="dexterity_requirement">Dexterity Requirement</string>
+    <string name="intelligence_requirement">Intelligence Requirement</string>
+    <string name="faith_requirement">Faith Requirement</string>
+    <string name="strength_bonus">Strength Bonus</string>
+    <string name="dexterity_bonus">Dexterity Bonus</string>
+    <string name="intelligence_bonus">Intelligence Bonus</string>
+    <string name="faith_bonus">Faith Bonus</string>
+    <string name="physical_damage_reduction">Physical Damage Reduction</string>
+    <string name="magical_damage_reduction">Magical Damage Reduction</string>
+    <string name="fire_damage_reduction">Fire Damage Reduction</string>
+    <string name="lightning_damage_reduction">Lightning Damage Reduction</string>
+    <string name="light_weight_load">Light Load</string>
+    <string name="medium_weight_load">Medium Load</string>
+    <string name="heavy_weight_load">Heavy Load</string>
+    <string name="title_activity_armor_results_screen">ArmorResultsScreen</string>
+
+</resources>

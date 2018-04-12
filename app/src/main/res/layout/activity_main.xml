@@ -1,0 +1,513 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/linearLayoutroot"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView">
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vitality"
+        android:id="@+id/vitalitytag"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dip"
+        android:paddingBottom="20dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endurance"
+        android:id="@+id/endurancetag"
+        android:layout_below="@+id/attunementtag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dip"
+        android:paddingBottom="20dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Strength"
+        android:id="@+id/strengthtag"
+        android:layout_below="@+id/endurancetag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dip"
+        android:paddingBottom="20dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dexterity"
+        android:id="@+id/dexteritytag"
+        android:layout_below="@+id/strengthtag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dip"
+        android:paddingBottom="20dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resistance"
+        android:id="@+id/resistancetag"
+        android:layout_below="@+id/dexteritytag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dip"
+        android:paddingBottom="20dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intelligence"
+        android:id="@+id/intelligencetag"
+        android:layout_below="@+id/resistancetag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dip"
+        android:paddingBottom="20dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faith"
+        android:id="@+id/faithtag"
+        android:layout_below="@+id/intelligencetag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dip"
+        android:paddingBottom="20dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humanity"
+        android:id="@+id/humanitytag"
+        android:layout_below="@+id/faithtag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dip"
+        android:paddingBottom="20dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Attunement"
+        android:id="@+id/attunementtag"
+        android:layout_below="@+id/vitalitytag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30dip"
+        android:paddingBottom="20dip"
+        android:textStyle="bold"
+        android:textColor="#ff000000" />
+
+    <EditText
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/vitalitytext"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/attunementtext"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:textColor="#ff141414"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/attunementtext"
+        android:layout_below="@+id/vitalitytag"
+        android:layout_toRightOf="@+id/attunementtag"
+        android:layout_toEndOf="@+id/attunementtag"
+        android:maxWidth="30dip"
+        android:minWidth="30dip"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:textColor="#ff141414"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/endurancetext"
+        android:layout_alignTop="@+id/endurancetag"
+        android:layout_alignLeft="@+id/attunementtext"
+        android:maxWidth="30dip"
+        android:minWidth="30dip"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:textColor="#ff141414"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/strengthtext"
+        android:layout_alignTop="@+id/strengthtag"
+        android:layout_alignLeft="@+id/attunementtext"
+        android:maxWidth="30dip"
+        android:minWidth="30dip"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:textColor="#ff141414"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/dexteritytext"
+        android:layout_alignTop="@+id/dexteritytag"
+        android:layout_alignLeft="@+id/attunementtext"
+        android:maxWidth="30dip"
+        android:minWidth="30dip"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:textColor="#ff141414"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/resistancetext"
+        android:layout_alignTop="@+id/resistancetag"
+        android:layout_alignLeft="@+id/attunementtext"
+        android:maxWidth="30dip"
+        android:minWidth="30dip"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:textColor="#ff141414"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/intelligencetext"
+        android:layout_alignTop="@+id/intelligencetag"
+        android:layout_alignLeft="@+id/attunementtext"
+        android:maxWidth="30dip"
+        android:minWidth="30dip"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:textColor="#ff141414"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/faithtext"
+        android:layout_alignTop="@+id/faithtag"
+        android:layout_alignLeft="@+id/attunementtext"
+        android:maxWidth="30dip"
+        android:minWidth="30dip"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:textColor="#ff141414"
+        android:textAlignment="center" />
+
+    <EditText
+        android:layout_width="60dip"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/humanitytext"
+        android:layout_alignTop="@+id/humanitytag"
+        android:layout_alignLeft="@+id/attunementtext"
+        android:maxWidth="30dip"
+        android:minWidth="30dip"
+        android:textSize="30dip"
+        android:textStyle="bold"
+        android:textColor="#ff141414"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:id="@+id/continuebutton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/humanitytag"
+        android:background="@drawable/continuebtn"
+        android:clickable="true"
+        android:onClick="ClickContinue" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:id="@+id/vitplusbtn"
+        android:layout_toLeftOf="@+id/vitminbtn"
+        android:layout_alignTop="@+id/vitminbtn"
+        android:textSize="20dip"
+        android:background="@drawable/add"
+        android:clickable="true"
+        android:onClick="PlusClick" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="+"
+        android:id="@+id/attplusbtn"
+        android:layout_alignTop="@+id/attminbtn"
+        android:layout_toLeftOf="@+id/attminbtn"
+        android:textSize="20dip"
+        android:background="@drawable/add"
+        android:clickable="true"
+        android:onClick="PlusClick" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="+"
+        android:id="@+id/endplusbtn"
+        android:layout_alignTop="@+id/endminbtn"
+        android:layout_toLeftOf="@+id/endminbtn"
+        android:textSize="20dip"
+        android:background="@drawable/add"
+        android:clickable="true"
+        android:onClick="PlusClick" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="+"
+        android:id="@+id/strplusbtn"
+        android:layout_alignTop="@+id/strminbtn"
+        android:layout_toLeftOf="@+id/strminbtn"
+        android:textSize="20dip"
+        android:background="@drawable/add"
+        android:clickable="true"
+        android:onClick="PlusClick" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="+"
+        android:id="@+id/dexplusbtn"
+        android:layout_alignTop="@+id/dexminbtn"
+        android:layout_toLeftOf="@+id/dexminbtn"
+        android:textSize="20dip"
+        android:background="@drawable/add"
+        android:clickable="true"
+        android:onClick="PlusClick" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="+"
+        android:id="@+id/resplusbtn"
+        android:layout_alignTop="@+id/resminbtn"
+        android:layout_toLeftOf="@+id/resminbtn"
+        android:textSize="20dip"
+        android:background="@drawable/add"
+        android:clickable="true"
+        android:onClick="PlusClick" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="+"
+        android:id="@+id/intplusbtn"
+        android:layout_alignTop="@+id/intminbtn"
+        android:layout_toLeftOf="@+id/intminbtn"
+        android:textSize="20dip"
+        android:background="@drawable/add"
+        android:clickable="true"
+        android:onClick="PlusClick" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="+"
+        android:id="@+id/faithplusbtn"
+        android:layout_alignTop="@+id/faithminbtn"
+        android:layout_toLeftOf="@+id/faithminbtn"
+        android:textSize="20dip"
+        android:background="@drawable/add"
+        android:clickable="true"
+        android:onClick="PlusClick" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="+"
+        android:id="@+id/humplusbtn"
+        android:layout_alignTop="@+id/humminbtn"
+        android:layout_toLeftOf="@+id/humminbtn"
+        android:textSize="20dip"
+        android:background="@drawable/add"
+        android:clickable="true"
+        android:onClick="PlusClick" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:id="@+id/vitminbtn"
+        android:textSize="20dip"
+        android:layout_alignTop="@+id/vitalitytag"
+        android:background="@drawable/subtract"
+        android:onClick="MinusClick"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="-"
+        android:id="@+id/attminbtn"
+        android:textSize="20dip"
+        android:layout_alignTop="@+id/attunementtag"
+        android:background="@drawable/subtract"
+        android:onClick="MinusClick"
+        android:clickable="true"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="-"
+        android:id="@+id/endminbtn"
+        android:textSize="20dip"
+        android:layout_alignTop="@+id/endurancetag"
+        android:background="@drawable/subtract"
+        android:onClick="MinusClick"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="-"
+        android:id="@+id/strminbtn"
+        android:textSize="20dip"
+        android:layout_alignTop="@+id/strengthtag"
+        android:background="@drawable/subtract"
+        android:onClick="MinusClick"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="-"
+        android:id="@+id/dexminbtn"
+        android:textSize="20dip"
+        android:layout_alignTop="@+id/dexteritytag"
+        android:background="@drawable/subtract"
+        android:onClick="MinusClick"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="-"
+        android:id="@+id/resminbtn"
+        android:textSize="20dip"
+        android:layout_alignTop="@+id/resistancetag"
+        android:background="@drawable/subtract"
+        android:onClick="MinusClick"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="-"
+        android:id="@+id/intminbtn"
+        android:textSize="20dip"
+        android:layout_alignTop="@+id/intelligencetag"
+        android:background="@drawable/subtract"
+        android:onClick="MinusClick"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="-"
+        android:id="@+id/faithminbtn"
+        android:textSize="20dip"
+        android:layout_alignTop="@+id/faithtag"
+        android:background="@drawable/subtract"
+        android:onClick="MinusClick"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+    <Button
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:text="-"
+        android:id="@+id/humminbtn"
+        android:textSize="20dip"
+        android:layout_alignTop="@+id/humanitytag"
+        android:background="@drawable/subtract"
+        android:onClick="MinusClick"
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false" />
+
+</RelativeLayout>
+
+</ScrollView>
+
+</LinearLayout>

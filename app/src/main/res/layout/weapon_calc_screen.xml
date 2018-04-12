@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sort List"
+        android:id="@+id/sortlisttext" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sortlist"
+        android:layout_alignTop="@+id/sortlisttext"
+        android:layout_alignBottom="@+id/sortlisttext"
+        android:layout_alignLeft="@+id/weapontypelist"
+        android:choiceMode="singleChoice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@+id/sortlisttext"
+        android:text="Weapon Types"
+        android:id="@+id/weapontypetext"
+        android:layout_marginTop="20dp" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/weapontypelist"
+        android:layout_alignTop="@+id/weapontypetext"
+        android:layout_alignBottom="@+id/weapontypetext"
+        android:layout_toRightOf="@+id/weapontypetext"
+        android:choiceMode="multipleChoice" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Weapon List"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/weapontypetext"
+        android:id="@+id/weaponlisttext"
+        android:layout_marginTop="20dp" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/weaponlisttext"
+        android:id="@+id/weaponlistscrollview" >
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/weaponlist"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:choiceMode="none" />
+    </ScrollView>
+
+</RelativeLayout>
